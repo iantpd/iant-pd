@@ -376,4 +376,71 @@
         <div class="course-price">£29</div>
       </div>
 
-      <div class
+      <div class="course-card fade-in" style="transition-delay:0.9s;opacity:0.6;pointer-events:none">
+        <span class="featured-tag" style="background:var(--mid)">Coming Soon</span>
+        <div class="course-cat">Leadership</div>
+        <div class="course-title">Confidence Building</div>
+        <div class="course-formats"><span class="format-pill">Video</span><span class="format-pill">Podcast</span><span class="format-pill">Workbook</span></div>
+        <div class="course-price">£29</div>
+      </div>
+
+      <div class="course-card fade-in" style="transition-delay:0.95s;opacity:0.6;pointer-events:none">
+        <span class="featured-tag" style="background:var(--mid)">Coming Soon</span>
+        <div class="course-cat">Professional Skills</div>
+        <div class="course-title">Writing a Report</div>
+        <div class="course-formats"><span class="format-pill">Video</span><span class="format-pill">Podcast</span><span class="format-pill">Workbook</span></div>
+        <div class="course-price">£29</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="why-section" id="why">
+  <div class="section-inner">
+    <div class="section-label">Why Ian T</div>
+    <h2 class="section-title" style="color:var(--bg)">Learning that actually<br><em style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--teal)">works.</em></h2>
+    <p class="section-sub">Every course is built around one belief: professional development should be practical, immediate and human.</p>
+    <div class="why-grid">
+      <div class="why-item fade-in">
+        <div class="why-num">3×</div>
+        <div class="why-title">Three formats, one course</div>
+        <p class="why-text">Every course comes as a video, a podcast MP3 and a PDF workbook. Watch at your desk, listen on your commute, work through the exercises at your own pace.</p>
+      </div>
+      <div class="why-item fade-in" style="transition-delay:0.1s">
+        <div class="why-num">∞</div>
+        <div class="why-title">Buy once, keep forever</div>
+        <p class="why-text">No subscription. No login. No expiry date. Purchase a course and it's yours — download everything and access it whenever you need it, for as long as you want.</p>
+      </div>
+      <div class="why-item fade-in" style="transition-delay:0.2s">
+        <div class="why-num">0</div>
+        <div class="why-title">Zero fluff</div>
+        <p class="why-text">Every minute of every course is built around practical application. These aren't academic exercises — they're tools you can use in your next conversation, meeting or appraisal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="section-inner" style="position:relative;z-index:1">
+    <div class="section-label" style="text-align:center">Start today</div>
+    <p class="cta-tagline">Because the future belongs to those who master the human side of work</p>
+    <a href="https://iantpd.gumroad.com" class="cta-btn" target="_blank" rel="noopener">Browse all courses</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-brand">Ian T | Professional Development</div>
+  <div class="footer-tag">Because the future belongs to those who master the human side of work</div>
+  <div class="footer-copy">&copy; 2026 Ian T Professional Development</div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
